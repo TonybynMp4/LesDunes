@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #404040;
+    --secondary-color: #505A5B;
+    --text-color: #f4f4f4;
+    --text-color-secondary: #0f0f0f;
+}
+
+body {
+    background-color: var(--primary-color);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+nav a {
+    padding: 0.75em;
+    border: 1px solid white;
+    color: var(--text-color);
+    margin-inline: 1em;
+}
+
+nav a:hover {
+    background-color: white;
+    color: var(--text-color-secondary);
+    border-radius: 0.5em;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding-block: 0.25em;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+
+.logo {
+    display: flex;
+    color: var(--text-color);
+    align-items: center;
+}
+
+.logo img {
+    width: 64px;
+    height: 64px;
+    margin-inline: 1em;
+    border-radius: 0;
+}
+
+main {
+    width: 80%;
+    margin-inline: auto;
+    margin-block: 2em;
+}
+
+.image-homepage {
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery img {
+    width: 30%;
+    margin-block: 1em;
+
+}
+
+p {
+    margin-block: 1em;
+}
+
+img {
+    width: 80%;
+    border-radius: 1em;
+}
+
+.presentation-image {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.presentation-image p {
+    width: 50%;
+    text-align: justify;
+}
+
+.presentation p {
+    margin-block: 1em;
+}
+
+.profil-image {
+    height: 35vh;
+    width: auto;
+}
+
+.section_profil {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.photo_profil {
+    width: 15vw;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+}
+
+.texte_presentation {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.texte {
+    margin: auto;
+    height: 50%;
+    width: 50%;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 5vw;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socials img {
+    height: 3em;
+    width: auto;
+}
+
+.contact form fieldset {
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: 40vw;
+}
+
+form * {
+    margin-block: 0.25em;
+}
+
+button {
+    padding: 0.25em;
+    width: fit-content;
+}
